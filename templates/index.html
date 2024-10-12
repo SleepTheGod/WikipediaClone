@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="search">
+        <form action="{{ url_for('search') }}" method="POST">
+            <input type="text" name="query" placeholder="Search Wikipedia...">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <main>
+        <section class="featured-article">
+            <h2>Featured Article</h2>
+            <p>This is a placeholder for the featured article text. Replace this with actual content.</p>
+        </section>
+        <section class="latest-news">
+            <h2>In the News</h2>
+            <ul>
+                <li>News item 1</li>
+                <li>News item 2</li>
+                <li>News item 3</li>
+            </ul>
+        </section>
+        <section class="random-article">
+            <h2>Did you know?</h2>
+            <p>Placeholder for a random article or trivia. Replace this with actual content.</p>
+        </section>
+    </main>
+{% endblock %}
