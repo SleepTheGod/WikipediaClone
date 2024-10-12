@@ -13,13 +13,13 @@
     </header>
     <nav>
         <ul>
-            <li><a href="#">Main Page</a></li>
-            <li><a href="#">Contents</a></li>
-            <li><a href="#">Featured content</a></li>
-            <li><a href="#">Current events</a></li>
-            <li><a href="#">Random article</a></li>
-            <li><a href="#">About Wikipedia</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li><a href="{{ url_for('main_page') }}">Main Page</a></li>
+            <li><a href="{{ url_for('contents') }}">Contents</a></li>
+            <li><a href="{{ url_for('featured_content') }}">Featured Content</a></li>
+            <li><a href="{{ url_for('current_events') }}">Current Events</a></li>
+            <li><a href="{{ url_for('random_article') }}">Random Article</a></li>
+            <li><a href="{{ url_for('about') }}">About Wikipedia</a></li>
+            <li><a href="{{ url_for('contact_us') }}">Contact Us</a></li>
         </ul>
     </nav>
     <div id="content">
